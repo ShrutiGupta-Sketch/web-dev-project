@@ -1,0 +1,92 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgba(255, 127, 80, 0.889); /* Warm background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+    background-color: rgba(0, 66, 128, 0.874);
+    color: white;
+}
+
+/* Profile Image */
+#box img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid white;
+}
+
+/* Section Links (Buttons) */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.box {
+    background-color:bisque;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.box:hover {
+    background-color: #f0f0f0f6;
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Content Sections */
+.content-box {
+    display: none;
+    background-color:lightcyan;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Show the targeted section */
+.content-box:target {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out,transform 0.3s ease-in-out;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 66, 128, 0.9);
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0px -2px 5px rgba(0,0,0,0,2);
+}
